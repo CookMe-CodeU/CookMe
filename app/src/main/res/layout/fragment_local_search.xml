@@ -33,7 +33,42 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/ColorPrimaryLight">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Recipes that have: "
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ingredients_in_query_textview"
+                android:textColor="#ffffff"
+                android:paddingBottom="8dp"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <ListView
         android:id="@+id/recipes_list"
@@ -41,7 +76,8 @@
         android:paddingBottom="8dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ffffff">
+        android:background="#ffffff"
+        android:visibility="invisible">
 
     </ListView>
 
