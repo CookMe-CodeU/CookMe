@@ -103,7 +103,7 @@ public class LocalRecipeFragment extends Fragment implements  LoaderManager.Load
         mIngredientInput.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), local_search.class);
+                Intent intent = new Intent(getActivity(), LocalSearchActivity.class);
                 startActivity(intent);
             }
         });

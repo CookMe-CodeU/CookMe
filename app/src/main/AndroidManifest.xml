@@ -64,7 +64,7 @@
                 android:value="MainActivity" />
         </activity>
         <activity
-            android:name=".local_search"
+            android:name=".LocalSearchActivity"
             android:label="@string/title_activity_local_search" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
