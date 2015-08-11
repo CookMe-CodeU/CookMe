@@ -180,6 +180,12 @@ public class Utility {
             numIng += 1;
 
         }
+        Bitmap smallimage = getImage(picture);
+        Log.v(null,"This is the height" +smallimage.getHeight());
+        Log.v(null,"This is the width" +smallimage.getWidth());
+
+        smallimage = Bitmap.createScaledBitmap(smallimage,64, 64, true);
+        picture = getBytes(smallimage);
         String image = Base64.encodeToString(picture, Base64.URL_SAFE);
         Log.i("BAse64 is : ", image);
         image = image.replace("\n", "").replace("\r", "");

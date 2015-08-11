@@ -170,7 +170,9 @@ public class AddRecipeActivityFragment extends Fragment {
                 BitmapDrawable drawable = (BitmapDrawable) mImageView.getDrawable();
                 Bitmap picture = drawable.getBitmap();
 
+
                 byte picture_in_bytes[] = Utility.getBytes(picture);
+
 
 
                 if(validAddingRecipe(recipe_name, mInstructionsAdded, mIngredientsList)){
